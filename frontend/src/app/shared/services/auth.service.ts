@@ -97,7 +97,7 @@ export class AuthService {
         Log.logger = console;
 
         this.userManager = new UserManager({
-                       client_id: 'squidex-frontend',
+                       client_id: 'alexcoc-frontend',
                            scope: 'squidex-api openid profile email permissions',
                    response_type: 'code',
                     redirect_uri: apiUrl.buildUrl('login;'),

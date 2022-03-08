@@ -9,6 +9,6 @@ namespace Squidex.Shared
 {
     public static class DefaultClients
     {
-        public const string Frontend = "squidex-frontend";
+        public const string Frontend = "alexcoc-frontend";
     }
 }

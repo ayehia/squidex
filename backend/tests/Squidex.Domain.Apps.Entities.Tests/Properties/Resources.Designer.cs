@@ -61,7 +61,7 @@ namespace Squidex.Domain.Apps.Entities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; onload=&quot;alert(localStorage.getItem(&apos;oidc.user:https://cloud.squidex.io/identity-server/:squidex-frontend&apos;))&quot;&gt;
+        ///   Looks up a localized string similar to &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; onload=&quot;alert(localStorage.getItem(&apos;oidc.user:https://cloud.squidex.io/identity-server/:alexcoc-frontend&apos;))&quot;&gt;
         ///  &lt;path d=&quot;M30,1h40l29,29v40l-29,29h-40l-29-29v-40z&quot; stroke=&quot;#000&quot; fill=&quot;none&quot;/&gt; 
         ///  &lt;path d=&quot;M31,3h38l28,28v38l-28,28h-38l-28-28v-38z&quot; fill=&quot;#a23&quot;/&gt; 
         ///  &lt;text x=&quot;50&quot; y=&quot;68&quot; font-size=&quot;48&quot; fill=&quot;#FFF&quot; text-anchor=&quot;middle&quot;&gt;&lt;![CDATA[410]]&gt;&lt;/text&gt;
