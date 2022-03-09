@@ -21,11 +21,12 @@ const routes: Routes = [
         component: InternalAreaComponent,
         canActivate: [MustBeAuthenticatedGuard, LoadAppsGuard],
         children: [
-            {
-                path: '',
-                loadChildren: () => import('./features/apps/module').then(m => m.SqxFeatureAppsModule),
-                canActivate: [UnsetAppGuard],
-            },
+            //AYKH: disable access to the apps screen where the client can see all apps and create shortcuts
+            // {
+            //     path: '',
+            //     loadChildren: () => import('./features/apps/module').then(m => m.SqxFeatureAppsModule),
+            //     canActivate: [UnsetAppGuard],
+            // },
             {
                 path: 'administration',
                 loadChildren: () => import('./features/administration/module').then(m => m.SqxFeatureAdministrationModule),

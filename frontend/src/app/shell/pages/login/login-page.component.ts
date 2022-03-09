@@ -24,7 +24,8 @@ export class LoginPageComponent implements OnInit {
         this.authService.loginRedirectComplete()
             .subscribe({
                 next: () => {
-                    this.router.navigate(['/app'], { replaceUrl: true });
+                    //AYKH: redirect to the default app just after the login
+                    this.router.navigate(['/app/alexcoc'], { replaceUrl: true });
                 },
                 error: () => {
                     this.router.navigate(['/'], { replaceUrl: true });

@@ -1,5 +1,6 @@
 <ul class="nav navbar-nav align-items-center flex-nowrap">
-    <li class="nav-item dropdown">
+    <!-- AYKH: disable apps DDL from which the client can create apps or view apps list -->
+    <!-- <li class="nav-item dropdown">
         <span class="form-select" id="app-name" (click)="appsMenu.toggle()" #button>
             <ng-container *ngIf="appsState.selectedApp | async; let app; else noApp">
                 {{app.displayName}}
@@ -46,11 +47,12 @@
                 </sqx-dropdown-menu>
             </ng-container>
         </ng-container>
-    </li>
+    </li> -->
 
     <nav aria-label="breadcrumb" *ngIf="appPath | async; let path">
         <ol class="breadcrumb ms-2" *ngIf="path.length > 0">
-            <li class="breadcrumb-item"></li>
+            <!-- AYKH: remove the first "/" from the breadcrumb -->
+            <!-- <li class="breadcrumb-item"></li> -->
             <li class="breadcrumb-item" *ngFor="let item of path; trackBy: trackByTitle; let last = last" [class.active]="last">
                 <a [routerLink]="item.route" [relativeTo]="route" [class.disabled]="last">{{item.localized}}</a>
             </li>

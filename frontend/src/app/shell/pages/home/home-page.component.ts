@@ -6,7 +6,7 @@
  */
 
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { AuthService } from '@app/shared';
 
 @Component({
@@ -19,24 +19,27 @@ export class HomePageComponent {
 
     constructor(
         private readonly authService: AuthService,
-        private readonly router: Router,
+        // private readonly router: Router,
     ) {
     }
 
     public login() {
-        if (this.isIE()) {
-            this.authService.loginRedirect();
-        } else {
-            this.authService.loginPopup()
-                .subscribe({
-                    next: () => {
-                        this.router.navigate(['/app']);
-                    },
-                    error: () => {
-                        this.showLoginError = true;
-                    },
-                });
-        }
+        this.authService.loginRedirect();
+
+        //AYKH: always redirect to the login page
+        // if (this.isIE()) {
+        //     this.authService.loginRedirect();
+        // } else {
+        //     this.authService.loginPopup()
+        //         .subscribe({
+        //             next: () => {
+        //                 this.router.navigate(['/app']);
+        //             },
+        //             error: () => {
+        //                 this.showLoginError = true;
+        //             },
+        //         });
+        // }
     }
 
     public isIE() {
